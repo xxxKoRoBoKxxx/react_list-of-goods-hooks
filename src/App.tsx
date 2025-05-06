@@ -90,7 +90,7 @@ export const App: React.FC = () => {
             type="button"
             className={classNames('button', 'is-danger', 'is-light')}
             onClick={() => {
-              setSortField('');
+              setSortField(SortType.RESET);
               setReversed(false);
             }}
           >
