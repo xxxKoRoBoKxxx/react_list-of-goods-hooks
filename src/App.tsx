@@ -24,7 +24,7 @@ enum SortType {
 }
 
 export const App: React.FC = () => {
-  const [sortField, setSortField] = useState('');
+  const [sortField, setSortField] = useState(SortType.RESET);
   const [reversed, setReversed] = useState(false);
 
   let visibleGoods = [...goodsFromServer].sort((good1, good2) => {
